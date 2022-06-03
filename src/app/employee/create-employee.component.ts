@@ -4,20 +4,23 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-create-employee',
   templateUrl: './create-employee.component.html',
-  styleUrls: ['./create-employee.component.scss']
+  styleUrls: ['./create-employee.component.css']
 })
 export class CreateEmployeeComponent implements OnInit {
- fullName:string;
- email: string;
- 
-  constructor() { 
-  
-  }
+  email: string;
+  fullName: string;
+  gender = 'male';
+  phoneNumber: string;
+  contactPreference: boolean;
+  isActive: boolean;
+  department : number;
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  saveEmployee(employeeForm: NgForm):void{
-    console.log(employeeForm);
+  saveEmployee(employeeForm: NgForm): void {
+    console.log(employeeForm)
   }
+  
 }
