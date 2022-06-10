@@ -57,10 +57,10 @@
             <div class="form-group">
                 <label for="department">Department</label>
                 <select name="department" id="department" type="" [(ngModel)]="department" class="form-control">
-                    <option value="1">Help Desk</option>
-                    <option value="2">HR</option>
-                    <option value="1">IT</option>
-                    <option value="1">Payroll</option>
+                    <option  *ngFor="let dept of departments" [value]="dept.id">
+                        {{dept.name}}
+                    </option>
+                   
                 </select>
             </div>
 

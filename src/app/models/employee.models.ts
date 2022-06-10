@@ -1,4 +1,4 @@
-export class Employee {
+export class Employee{
     id: number;
     name: string;
     gender: string;
@@ -7,6 +7,6 @@ export class Employee {
     contactPreference: string;
     dateOfBirth: Date;
     department: string;
-    isActive: Boolean;
-    photoPath?: string;
+    isActive: boolean;
+    photoPath?: string; 
 }
